@@ -34,7 +34,7 @@ custom exceptions (<b>src\main\java\task\quandoo\exceptions</b>). Package <b>src
 
 <p>Please open a terminal and run next commands:</p>
 <code>git clone https://github.com/Eduard-Za/Candidate-task.git</code><br/>
-<code>cd Quandoo-Candidate-task</code><br/>
+<code>cd Candidate-task</code><br/>
 <code>mvn test</code><br/>
 <br> 
 <p>Example of report file in JSON format you can find in <b>target/cucumber-report.json</b></p>
