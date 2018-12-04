@@ -1,4 +1,4 @@
-package task.quandoo.exceptions;
+package task.exceptions;
 
 public class UnknownOsException extends RuntimeException {
     public UnknownOsException(String message) {

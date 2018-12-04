@@ -1,4 +1,4 @@
-package task.quandoo.drivers;
+package task.drivers;
 
 /**
  * Enum - stores names of OS and property names with paths to Drivers

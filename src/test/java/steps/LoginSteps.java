@@ -2,8 +2,8 @@ package steps;
 
 import cucumber.api.java8.En;
 import org.junit.Assert;
-import task.quandoo.pages.LoginPage;
-import task.quandoo.utils.PropertiesLoader;
+import task.pages.LoginPage;
+import task.utils.PropertiesLoader;
 
 import static steps.BaseSteps.driver;
 

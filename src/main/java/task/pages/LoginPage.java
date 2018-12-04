@@ -1,9 +1,8 @@
-package task.quandoo.pages;
+package task.pages;
 
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import task.quandoo.utils.PropertiesLoader;
+import task.utils.PropertiesLoader;
 
 import static com.codeborne.selenide.Selenide.$;
 

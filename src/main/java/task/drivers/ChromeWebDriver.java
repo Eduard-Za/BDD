@@ -1,11 +1,9 @@
-package task.quandoo.drivers;
+package task.drivers;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import task.quandoo.exceptions.UnknownOsException;
-
-import static task.quandoo.drivers.Drivers.*;
-import static task.quandoo.utils.PropertiesLoader.loadProperty;
+import task.exceptions.UnknownOsException;
+import task.utils.PropertiesLoader;
 
 /**
  * Class sets the chromedriver path and returns an instance of ChromeDriver object.
@@ -27,12 +25,12 @@ public class ChromeWebDriver {
     public static WebDriver getWebDriverInstance() {
         String os = System.getProperty(OS);
         String chromeDriverPath = null;
-        if (os.contains(WINDOWS.getOsName())) {
-            chromeDriverPath = loadProperty(WINDOWS.getPath());
-        } else if (os.contains(MAC.getOsName())) {
-            chromeDriverPath = loadProperty(MAC.getPath());
-        } else if (os.contains(Linux.getOsName())) {
-            chromeDriverPath = loadProperty(Linux.getPath());
+        if (os.contains(Drivers.WINDOWS.getOsName())) {
+            chromeDriverPath = PropertiesLoader.loadProperty(Drivers.WINDOWS.getPath());
+        } else if (os.contains(Drivers.MAC.getOsName())) {
+            chromeDriverPath = PropertiesLoader.loadProperty(Drivers.MAC.getPath());
+        } else if (os.contains(Drivers.Linux.getOsName())) {
+            chromeDriverPath = PropertiesLoader.loadProperty(Drivers.Linux.getPath());
         } else {
             throw new UnknownOsException("Unsupported OS");
         }

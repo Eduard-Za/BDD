@@ -1,7 +1,7 @@
-package task.quandoo.pages;
+package task.pages;
 
 import org.openqa.selenium.WebDriver;
-import task.quandoo.utils.PropertiesLoader;
+import task.utils.PropertiesLoader;
 
 
 

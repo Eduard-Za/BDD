@@ -2,7 +2,7 @@ package steps;
 
 import cucumber.api.java8.En;
 import org.junit.Assert;
-import task.quandoo.pages.HoverPage;
+import task.pages.HoverPage;
 
 import static steps.BaseSteps.driver;
 

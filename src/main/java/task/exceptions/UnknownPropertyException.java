@@ -1,4 +1,4 @@
-package task.quandoo.exceptions;
+package task.exceptions;
 
 public class UnknownPropertyException extends RuntimeException {
     public UnknownPropertyException(String message) {

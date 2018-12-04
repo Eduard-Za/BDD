@@ -2,7 +2,7 @@ package steps;
 
 import cucumber.api.java8.En;
 import org.junit.Assert;
-import task.quandoo.pages.TablePage;
+import task.pages.TablePage;
 
 import static steps.BaseSteps.driver;
 

@@ -3,7 +3,7 @@ package steps;
 import cucumber.api.java8.En;
 
 import static com.codeborne.selenide.Selenide.open;
-import static task.quandoo.pages.BasePage.url;
+import static task.pages.BasePage.url;
 /**
  * BackgroundSteps
  * Class that describes general steps.

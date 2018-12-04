@@ -1,6 +1,6 @@
-package task.quandoo.utils;
+package task.utils;
 
-import task.quandoo.exceptions.UnknownPropertyException;
+import task.exceptions.UnknownPropertyException;
 
 import java.io.IOException;
 import java.util.Properties;
