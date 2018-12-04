@@ -1,4 +1,4 @@
-# Quandoo-Candidate-task
+# Candidate-task
 Test Automation Engineer testing task.
 
 <p>This project contains automation tests in BDD style for testing <b>http://the-internet.herokuapp.com</b> web application.</p>
@@ -33,7 +33,7 @@ custom exceptions (<b>src\main\java\task\quandoo\exceptions</b>). Package <b>src
 <h3>How to run tests</h3>
 
 <p>Please open a terminal and run next commands:</p>
-<code>git clone https://github.com/Eduard-Za/Quandoo-Candidate-task.git</code><br/>
+<code>git clone https://github.com/Eduard-Za/Candidate-task.git</code><br/>
 <code>cd Quandoo-Candidate-task</code><br/>
 <code>mvn test</code><br/>
 <br> 
