@@ -1,9 +1,11 @@
 package steps;
 
 import cucumber.api.java8.En;
+import org.junit.Assert;
 import task.quandoo.pages.HoverPage;
 
 import static steps.BaseSteps.driver;
+
 /**
  * HoverSteps
  * Class that describes steps for Hover page.
@@ -21,7 +23,8 @@ public class HoverSteps implements En {
         });
 
         Then("I check that (.*) is displayed", (String username) -> {
-            hoverPage.validateUsername(username);
+            String usernameFromPage = hoverPage.getUserNameFromPage(username);
+            Assert.assertTrue(usernameFromPage.contains(username));
         });
     }
 }

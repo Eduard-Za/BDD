@@ -1,6 +1,7 @@
 package steps;
 
 import cucumber.api.java8.En;
+import org.junit.Assert;
 import task.quandoo.pages.TablePage;
 
 import static steps.BaseSteps.driver;
@@ -21,7 +22,8 @@ public class TableSteps implements En {
         });
 
         Then("table is sorted by last name in (ascending|descending) order", (String order) -> {
-            tablePage.verifyOrder(order);
+            boolean isOrdered = tablePage.verifyOrder(order);
+            Assert.assertTrue(isOrdered);
         });
 
     }

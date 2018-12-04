@@ -30,19 +30,19 @@ public class TablePage extends BasePage {
         $(lastNameHeader).click();
     }
 
-    public void verifyOrder(String order) {
-
+    public boolean verifyOrder(String order) {
+        boolean isOrdered = false;
         List<String> actualFromPage = $$(tableLastNames).texts();
         List<String> expectedAscSortedLastName = $$(tableLastNames).texts().stream().sorted().collect(Collectors.toList());
         List<String> expectedDescLastName = expectedAscSortedLastName.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList());
         switch (order) {
             case "ascending":
-                Assert.assertEquals(expectedAscSortedLastName, actualFromPage);
+                isOrdered = expectedAscSortedLastName.equals(actualFromPage);
                 break;
             case "descending":
-                Assert.assertEquals(expectedDescLastName, actualFromPage);
+                isOrdered = expectedDescLastName.equals(actualFromPage);
                 break;
         }
-
+        return isOrdered;
     }
 }

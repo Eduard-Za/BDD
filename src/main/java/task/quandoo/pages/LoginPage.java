@@ -56,10 +56,9 @@ public class LoginPage extends BasePage {
         $(loginButton).click();
     }
 
-    public void validateMessage(String message) {
+    public String getMessageFromPage() {
         String actualMessage = $(textMessage).getText().trim();
-        String expectedMessage = PropertiesLoader.loadProperty(message);
-        Assert.assertTrue(actualMessage.contains(expectedMessage));
+        return actualMessage;
     }
 
 

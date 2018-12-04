@@ -1,7 +1,9 @@
 package steps;
 
 import cucumber.api.java8.En;
+import org.junit.Assert;
 import task.quandoo.pages.LoginPage;
+import task.quandoo.utils.PropertiesLoader;
 
 import static steps.BaseSteps.driver;
 
@@ -23,7 +25,9 @@ public class LoginSteps implements En {
         });
 
         Then("I verify that the text (.*) is displayed", (String message) -> {
-            loginPage.validateMessage(message);
+            String expectedMessage = PropertiesLoader.loadProperty(message);
+            String actualMessage = loginPage.getMessageFromPage();
+            Assert.assertTrue(actualMessage.contains(expectedMessage));
         });
     }
 }

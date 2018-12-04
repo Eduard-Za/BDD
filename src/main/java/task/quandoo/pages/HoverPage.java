@@ -25,9 +25,10 @@ public class HoverPage extends BasePage {
         $(By.xpath(userIndexLocator)).hover();
     }
 
-    public void validateUsername(String username) {
+    public String getUserNameFromPage(String username) {
         String userLocator = String.format("//h5[contains(text(), '%s')]", username);
-        Assert.assertTrue($(By.xpath(userLocator)).getText().contains(username));
+        String usernameFromPage = $(By.xpath(userLocator)).getText();
+        return usernameFromPage;
     }
 }
 
