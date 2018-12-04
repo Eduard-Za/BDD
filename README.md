@@ -23,11 +23,11 @@ Test Automation Engineer testing task.
 
 Step definitions for the features are stored in the <b>src\test\java\steps</b> package. 
 
-Tests were written using Page Object pattern (<b>src\main\java\task\quandoo\pages</b>). Also, were created a couple of
-custom exceptions (<b>src\main\java\task\quandoo\exceptions</b>). Package <b>src\main\java\task\quandoo\utils</b> contains 
+Tests were written using Page Object pattern (<b>src\main\java\task\pages</b>). Also, were created a couple of
+custom exceptions (<b>src\main\java\task\exceptions</b>). Package <b>src\main\java\task\utils</b> contains 
 <b>PropertiesLoader.class</b> that allows to load properties from properties files (<b>src\main\resources\test.properties</b>).
 
-<p>Testing runs using ChromeDriver with possibility to run in various environment(<b>src\main\java\task\quandoo\drivers</b>).</p>
+<p>Testing runs using ChromeDriver with possibility to run in various environment(<b>src\main\java\task\drivers</b>).</p>
 
 <p>Test Runner class - <b>src\test\java\TestRunner.java</b>.
 <h3>How to run tests</h3>
