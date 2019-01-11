@@ -1,5 +1,4 @@
-# Candidate-task
-Test Automation Engineer testing task.
+# BDD
 
 <p>This project contains automation tests in BDD style for testing <b>http://the-internet.herokuapp.com</b> web application.</p>
 <h3>Technology stack includes:</h3>
